@@ -13,6 +13,9 @@
 		D341C6E91FC42037008C9F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D341C6E71FC42037008C9F25 /* Main.storyboard */; };
 		D341C6EB1FC42037008C9F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D341C6EA1FC42037008C9F25 /* Assets.xcassets */; };
 		D341C6EE1FC42037008C9F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D341C6EC1FC42037008C9F25 /* LaunchScreen.storyboard */; };
+		D341C6FA1FC42056008C9F25 /* LLPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D341C6F71FC42056008C9F25 /* LLPieView.m */; };
+		D341C6FB1FC42056008C9F25 /* LLShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D341C6F91FC42056008C9F25 /* LLShapeLayer.m */; };
+		D341C6FD1FC42095008C9F25 /* ss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D341C6FC1FC42095008C9F25 /* ss@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		D341C6EA1FC42037008C9F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D341C6ED1FC42037008C9F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D341C6EF1FC42037008C9F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D341C6F61FC42056008C9F25 /* LLPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPieView.h; sourceTree = "<group>"; };
+		D341C6F71FC42056008C9F25 /* LLPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPieView.m; sourceTree = "<group>"; };
+		D341C6F81FC42056008C9F25 /* LLShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShapeLayer.h; sourceTree = "<group>"; };
+		D341C6F91FC42056008C9F25 /* LLShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShapeLayer.m; sourceTree = "<group>"; };
+		D341C6FC1FC42095008C9F25 /* ss@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ss@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,13 @@
 		D341C6DD1FC42037008C9F25 /* LLPieView */ = {
 			isa = PBXGroup;
 			children = (
+				D341C6F51FC42052008C9F25 /* LLPieView */,
 				D341C6E11FC42037008C9F25 /* AppDelegate.h */,
 				D341C6E21FC42037008C9F25 /* AppDelegate.m */,
 				D341C6E41FC42037008C9F25 /* ViewController.h */,
 				D341C6E51FC42037008C9F25 /* ViewController.m */,
 				D341C6E71FC42037008C9F25 /* Main.storyboard */,
+				D341C6FC1FC42095008C9F25 /* ss@2x.png */,
 				D341C6EA1FC42037008C9F25 /* Assets.xcassets */,
 				D341C6EC1FC42037008C9F25 /* LaunchScreen.storyboard */,
 				D341C6EF1FC42037008C9F25 /* Info.plist */,
@@ -77,6 +87,17 @@
 				D341C6DF1FC42037008C9F25 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D341C6F51FC42052008C9F25 /* LLPieView */ = {
+			isa = PBXGroup;
+			children = (
+				D341C6F61FC42056008C9F25 /* LLPieView.h */,
+				D341C6F71FC42056008C9F25 /* LLPieView.m */,
+				D341C6F81FC42056008C9F25 /* LLShapeLayer.h */,
+				D341C6F91FC42056008C9F25 /* LLShapeLayer.m */,
+			);
+			path = LLPieView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D341C6FD1FC42095008C9F25 /* ss@2x.png in Resources */,
 				D341C6EE1FC42037008C9F25 /* LaunchScreen.storyboard in Resources */,
 				D341C6EB1FC42037008C9F25 /* Assets.xcassets in Resources */,
 				D341C6E91FC42037008C9F25 /* Main.storyboard in Resources */,
@@ -153,7 +175,9 @@
 			files = (
 				D341C6E61FC42037008C9F25 /* ViewController.m in Sources */,
 				D341C6E31FC42037008C9F25 /* AppDelegate.m in Sources */,
+				D341C6FB1FC42056008C9F25 /* LLShapeLayer.m in Sources */,
 				D341C6E01FC42037008C9F25 /* main.m in Sources */,
+				D341C6FA1FC42056008C9F25 /* LLPieView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DY8NXRF8KD;
 				INFOPLIST_FILE = LLPieView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.LLPieView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DY8NXRF8KD;
 				INFOPLIST_FILE = LLPieView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOLITA0164.LLPieView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +338,7 @@
 				D341C6F41FC42037008C9F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
